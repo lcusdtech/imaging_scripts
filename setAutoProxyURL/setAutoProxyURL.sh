@@ -63,13 +63,13 @@ errorCount=0
 
 echo "DONE!"
 if [[ "$changed" -gt "0" ]]; then
-  echo "Successfully set for proxy for $changed interface(s)."
+  echo "Successfully set proxy for $changed interface(s)."
 fi
 if [[ "$unchanged" -gt "0" ]]; then
   echo "Proxy already present for $unchanged interface(s)."
 fi
 if [[ "$errorCount" -gt "0" ]]; then
-  echo "Failed to set for proxy for $errorCount interface(s)."
+  echo "Failed to set proxy for $errorCount interface(s)."
 fi
 
 unset IFS
